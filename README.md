@@ -1,15 +1,12 @@
 اسکریپت مسدود سازی دسترسی ای پی های خارجی به سرور برای جلوگیری از حملات دیداس ( ایران اکسس ) 
 
-#Requirement
-
-
-#ubuntu
+#ubuntu Requirement
 ````
 sudo apt update -y
 sudo apt install git zip iptables ipset -y
 ````
 
-#CentOS & Almalinux
+#CentOS & Almalinux Requirement
 ````
 sudo yum update -y
 sudo yum install git zip iptables ipset -y
