@@ -2,21 +2,22 @@
 
 #Requirement
 
-````
-#ubuntu
 
+#ubuntu
+````
 sudo apt update -y
 sudo apt install git zip iptables ipset -y
 ````
-````
-#CentOS & Almalinux
 
+#CentOS & Almalinux
+````
 sudo yum update -y
 sudo yum install git zip iptables ipset -y
 ````
-Run & Install Script
-````
 
+Run & Install Script
+
+````
 git clone https://github.com/sh-vp/Ir-acc-WAF.git
 
 cd Ir-acc-WAF
