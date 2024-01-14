@@ -1,11 +1,17 @@
 اسکریپت مسدود سازی دسترسی ای پی های خارجی به سرور برای جلوگیری از حملات دیداس ( ایران اکسس ) 
 
-#Run & Install (Ubuntu OS) 
+#Run & Install
 
-```` 
+````
+#ubuntu
 sudo apt update -y
-
 sudo apt install git zip iptables ipset -y
+
+#CentOS & Almalinux
+sudo yum update -y
+sudo yum install git zip iptables ipset -y
+
+*********************
 
 git clone https://github.com/sh-vp/Ir-acc-WAF.git
 
