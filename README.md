@@ -12,7 +12,7 @@ sudo yum update -y
 sudo yum install git zip iptables ipset -y
 ````
 
-Run & Install Script
+#Install Script
 
 ````
 git clone https://github.com/sh-vp/Ir-acc-WAF.git
@@ -20,15 +20,18 @@ git clone https://github.com/sh-vp/Ir-acc-WAF.git
 cd Ir-acc-WAF
 
 unzip ir_rules.zip
+````
 
-chmod +x start.sh && ./start.sh
+#Run Script
+
+````
+cd ~/Ir-acc-WAF && chmod +x start.sh && ./start.sh
+
 ````
 
 #Reset Setting To Default
 
 ````
-cd ~/Ir-acc-WAF
-
-chmod +x reset.sh && ./reset.sh
+cd ~/Ir-acc-WAF && chmod +x reset.sh && ./reset.sh
 
 ````
