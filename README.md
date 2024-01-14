@@ -1,4 +1,6 @@
-#Run & Install (Ubuntu OS)
+اسکریپت مسدود سازی دسترسی ای پی های خارجی به سرور برای جلوگیری از حملات دیداس ( ایران اکسس ) 
+
+#Run & Install (Ubuntu OS) 
 
 ```` 
 sudo apt update -y
