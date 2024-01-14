@@ -21,15 +21,13 @@ cd Ir-acc-WAF
 
 unzip ir_rules.zip
 
-cd ir_rules
-
 chmod +x start.sh && ./start.sh
 ````
 
 #Reset Setting To Default
 
 ````
-cd ~/Ir-acc-WAF/ir_rules
+cd ~/Ir-acc-WAF
 
 chmod +x reset.sh && ./reset.sh
 
