@@ -4,11 +4,15 @@
 
 ````
 #ubuntu
+
 sudo apt update -y
+
 sudo apt install git zip iptables ipset -y
 
 #CentOS & Almalinux
+
 sudo yum update -y
+
 sudo yum install git zip iptables ipset -y
 
 *********************
