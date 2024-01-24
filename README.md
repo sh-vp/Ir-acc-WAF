@@ -4,38 +4,21 @@
 -
 
 
-# ubuntu Requirement
+# ubuntu Quick Run and Install
 ````
-sudo apt update -y
-sudo apt install git zip iptables ipset -y
-````
-
-# CentOS & Almalinux Requirement
-````
-sudo yum update -y
-sudo yum install git zip iptables ipset -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt install zip iptables ipset -y && wget https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip && unzip ir_rules.zip && chmod +x start.sh && ./start.sh
 ````
 
-# Install Script
-
+# CentOS & Almalinux Quick Run and Install
 ````
-git clone https://github.com/sh-vp/Ir-acc-WAF.git
-
-cd Ir-acc-WAF
-
-unzip ir_rules.zip
+sudo yum update -y && sudo yum upgrade -y && sudo yum install zip iptables ipset -y && wget https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip && unzip ir_rules.zip && chmod +x start.sh && ./start.sh
 ````
 
-# Run Script
 
-````
-cd ~/Ir-acc-WAF && chmod +x start.sh && ./start.sh
-
-````
 
 # Reset Setting To Default
 
 ````
-cd ~/Ir-acc-WAF && chmod +x reset.sh && ./reset.sh
+cd && chmod +x reset.sh && ./reset.sh
 
 ````
