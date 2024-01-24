@@ -20,5 +20,4 @@ rm -rf start.sh reset.sh ip.txt ir_rules.zip && sudo yum update -y && sudo yum u
 
 ````
 cd && chmod +x reset.sh && ./reset.sh
-
 ````
