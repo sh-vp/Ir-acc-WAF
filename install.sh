@@ -59,6 +59,6 @@ clear
     echo -e "${yellow} ----------------------------------------------------------------"
     echo -e "${yellow} ----------------------------------------------------------------"
     echo -e ""
-    echo -e "${green}ir-waf             ${yellow}- Enter     ${white}Admin menu"
+    echo -e "${green}ir-waf             ${yellow}- Enter     ${White}Admin menu"
     echo -e ""
-    echo -e "${green} ----------------------------------------------------------------${white}"
+    echo -e "${green} ----------------------------------------------------------------${White}"
