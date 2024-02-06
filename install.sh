@@ -27,9 +27,7 @@ echo "The OS release is: $release"
     
 rm /usr/local/ir-waf -rf
 rm /usr/bin/ir-waf -rf
-sudo apt update -y 
-sudo apt upgrade -y 
-sudo apt install zip iptables ipset -y
+mkdir /usr/local/ir-waf
 wget --no-check-certificate -O /usr/local/ir-waf/ir_rules.zip https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip
 unzip /usr/local/ir-waf/ir_rules.zip
 cp /usr/local/ir-waf/ir-waf.sh /usr/bin/ir-waf
