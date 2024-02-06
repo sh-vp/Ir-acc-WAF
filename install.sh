@@ -29,9 +29,9 @@ rm /usr/local/ir-waf -rf
 rm /usr/bin/ir-waf -rf
 mkdir /usr/local/ir-waf
 wget --no-check-certificate -O /usr/local/ir-waf/ir_rules.zip https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip
-unzip /usr/local/ir-waf ir_rules.zip
-rm /usr/local/ir-waf/ir_rules.zip -rf
-cp /usr/local/ir-waf/ir-waf.sh /usr/bin/ir-waf
+unzip -o /usr/local/ir-waf/ir_rules.zip
+#rm /usr/local/ir-waf/ir_rules.zip
+#cp /usr/local/ir-waf/ir-waf.sh /usr/bin/ir-waf
 chmod +x /usr/local/ir-waf/ir-waf.sh
-chmod +x /usr/bin/ir-waf
-sed -i -e 's/\r$//' /usr/bin/ir-waf
+#chmod +x /usr/bin/ir-waf
+#sed -i -e 's/\r$//' /usr/bin/ir-waf
