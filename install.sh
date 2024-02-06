@@ -32,6 +32,7 @@ echo "The OS release is: $release"
         ;;
     esac
     
+rm start.sh ip.txt iran.txt cloudflare.txt ir_rules.zip reset.sh -rf
 rm /usr/local/ir-waf -rf
 rm /usr/bin/ir-waf -rf
 mkdir /usr/local/ir-waf
