@@ -32,34 +32,22 @@ echo "The OS release is: $release"
         ;;
     esac
     
-rm start.sh ip.txt iran.txt cloudflare.txt ir_rules.zip reset.sh -rf
 rm /usr/local/ir-waf -rf
 rm /usr/bin/ir-waf -rf
 mkdir /usr/local/ir-waf
 wget --no-check-certificate -O /usr/local/ir-waf/ir_rules.zip https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip
 unzip -o /usr/local/ir-waf/ir_rules.zip -d /usr/local/ir-waf
-rm /usr/local/ir-waf/ir_rules.zip
-cp /usr/local/ir-waf/ir-waf.sh /usr/bin/ir-waf
+rm /usr/local/ir-waf/ir_rules.zip -rf
+ln -s  /usr/local/ir-waf/ir-waf.sh /usr/bin/ir-waf
 chmod +x /usr/local/ir-waf/ir-waf.sh
 chmod +x /usr/bin/ir-waf
 sed -i -e 's/\r$//' /usr/bin/ir-waf
 
 clear
     echo -e ""
-    echo -e "${yellow} ----------------------------------------------------------------"
-    echo -e "${yellow} ----------------------------------------------------------------"
+    echo -e "${green}Iran Access Firewall Installed Successfully !"
+    echo -e "${green}----------------------------------------------"
     echo -e ""
-    echo -e "  ${green} _  ___  ___  _ _   ${red} ___  _  ___  ___  _ _ _  ___  _    _   "
-    echo -e "  ${green}| || . \| . || \ |  ${red}| __]| || . \| __]| | | || . || |  | |  "
-    echo -e "  ${green}| ||   /|   ||   |  ${red}| _] | ||   /| _] | | | ||   || |_ | |_ "
-    echo -e "  ${green}|_||_\_\|_|_||_\_|  ${red}|_|  |_||_\_\|___]|__/_/ |_|_||___||___|"
+    echo -e "${green}ir-waf             ${yellow}- Enter     ${white}Admin menu"
     echo -e ""
-    echo -e ""
-    echo -e "${green} Iran Access Firewall Installed Successfully !"
-    echo -e ""
-    echo -e "${yellow} ----------------------------------------------------------------"
-    echo -e "${yellow} ----------------------------------------------------------------"
-    echo -e ""
-    echo -e "${green}ir-waf             ${yellow}- Enter     ${White}Admin menu"
-    echo -e ""
-    echo -e "${green} ----------------------------------------------------------------${White}"
+    echo -e "${green}----------------------------------------------"
