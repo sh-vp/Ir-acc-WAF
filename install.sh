@@ -48,6 +48,6 @@ clear
     echo -e "${green}Iran Access Firewall Installed Successfully !"
     echo -e "${green}----------------------------------------------"
     echo -e ""
-    echo -e "${green}ir-waf             ${yellow}- Enter     ${white}Admin menu"
+    echo -e "${green}ir-waf             ${yellow}- Enter     ${White}Admin menu"
     echo -e ""
-    echo -e "${green}----------------------------------------------"
+    echo -e "${green}----------------------------------------------${White}"
