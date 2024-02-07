@@ -48,10 +48,4 @@ chmod +x /usr/bin/ir-waf
 sed -i -e 's/\r$//' /usr/bin/ir-waf
 
 clear
-    echo -e ""
-    echo -e "${green}Iran Access Firewall Installed Successfully !"
-    echo -e "${green}----------------------------------------------"
-    echo -e ""
-    echo -e "${green}ir-waf             ${yellow}- Enter     ${White}Admin menu"
-    echo -e ""
-    echo -e "${green}----------------------------------------------${White}"
+/usr/local/ir-waf/ir-waf.sh
