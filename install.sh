@@ -1,12 +1,5 @@
 #!/bin/bash
 
-red='\033[1;91m'          # Red
-green='\033[1;92m'        # Green
-yellow='\033[1;93m'       # Yellow
-White='\033[1;97m'        # White
-Blue='\033[1;94m'
-BICyan='\033[1;96m'
-
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}Fatal error: ${plain} Please run this script with root privilege \n " && exit 1
 
