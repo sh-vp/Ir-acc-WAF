@@ -32,13 +32,14 @@ echo "The OS release is: $release"
         ;;
     esac
     
+
+mkdir /usr/local/ir-waf
+wget --no-check-certificate -O /usr/local/ir-waf/ir_rules.zip https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip
 rm /usr/local/ir-waf/ir-waf.sh -rf
 rm /usr/local/ir-waf/update.sh -rf
 rm /usr/local/ir-waf/iran.txt -rf
 rm /usr/local/ir-waf/cloudflare.txt -rf
 rm /usr/bin/ir-waf -rf
-mkdir /usr/local/ir-waf
-wget --no-check-certificate -O /usr/local/ir-waf/ir_rules.zip https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip
 if [[ ! -f "/usr/local/ir-waf/conf.txt" ]]; then
 unzip -o /usr/local/ir-waf/ir_rules.zip -d /usr/local/ir-waf
 else
