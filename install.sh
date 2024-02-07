@@ -32,7 +32,10 @@ echo "The OS release is: $release"
         ;;
     esac
     
-rm /usr/local/ir-waf -rf
+rm /usr/local/ir-waf/ir-waf.sh -rf
+rm /usr/local/ir-waf/update.sh -rf
+rm /usr/local/ir-waf/iran.txt -rf
+rm /usr/local/ir-waf/cloudflare.txt -rf
 rm /usr/bin/ir-waf -rf
 mkdir /usr/local/ir-waf
 wget --no-check-certificate -O /usr/local/ir-waf/ir_rules.zip https://github.com/sh-vp/Ir-acc-WAF/releases/latest/download/ir_rules.zip
@@ -40,6 +43,7 @@ unzip -o /usr/local/ir-waf/ir_rules.zip -d /usr/local/ir-waf
 rm /usr/local/ir-waf/ir_rules.zip -rf
 ln -s  /usr/local/ir-waf/ir-waf.sh /usr/bin/ir-waf
 chmod +x /usr/local/ir-waf/ir-waf.sh
+chmod +x /usr/local/ir-waf/update.sh
 chmod +x /usr/bin/ir-waf
 sed -i -e 's/\r$//' /usr/bin/ir-waf
 
