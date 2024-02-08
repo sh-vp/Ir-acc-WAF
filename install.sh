@@ -47,6 +47,4 @@ chmod +x /usr/local/ir-waf/ir-waf.sh
 chmod +x /usr/local/ir-waf/update.sh
 chmod +x /usr/bin/ir-waf
 sed -i -e 's/\r$//' /usr/bin/ir-waf
-
-clear
 /usr/local/ir-waf/ir-waf.sh
