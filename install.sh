@@ -25,6 +25,10 @@ echo "The OS release is: $release"
         ;;
     esac
     
+rm /root/start.sh -rf
+rm /root/reset.sh -rf
+rm /root/ip.txt -rf
+rm /root/ir_rules.zip -rf    
 rm /usr/local/ir-waf/ir-waf.sh -rf
 rm /usr/local/ir-waf/update.sh -rf
 rm /usr/local/ir-waf/iran.txt -rf
