@@ -18,10 +18,10 @@ echo "The OS release is: $release"
 
     case "${release}" in
     centos | almalinux | rocky)
-        yum -y update && yum install -y -q zip iptables ipset
+        yum -y update && yum install zip iptables ipset -y -q
         ;;
     *)
-        apt-get update -y && apt install -y -q zip iptables ipset
+        apt update -y && apt install zip iptables ipset -y -q
         ;;
     esac
     
