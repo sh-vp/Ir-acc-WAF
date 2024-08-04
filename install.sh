@@ -14,6 +14,7 @@ else
     echo "Failed to check the system OS, please contact the author!" >&2
     exit 1
 fi
+
 echo "The OS release is: $release"
 
     case "${release}" in
@@ -21,7 +22,7 @@ echo "The OS release is: $release"
         yum -y update && yum install zip iptables ipset -y -q
         ;;
     *)
-        apt update -y && apt install zip iptables ipset -y -q
+    apt-get update && apt-get install zip iptables ipset -y -q
         ;;
     esac
     
